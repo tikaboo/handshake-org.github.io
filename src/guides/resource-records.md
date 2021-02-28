@@ -211,7 +211,7 @@ The `TXT` Handshake resource record corresponds to the DNS
 protocols are built on top of it. `TXT` records are defined
 in [RFC 1035](https://tools.ietf.org/html/rfc1035). It is useful
 for placing arbitrary data on chain. The Handshake `TXT` record
-must contain the fields `type` and `text`. The `text` field
+must contain the fields `type` and `txt`. The `txt` field
 must be an array of strings.
 
 Example:
@@ -220,7 +220,7 @@ Example:
 {
   "records": [{
     "type": "TXT",
-    "text": ["my text record"]
+    "txt": ["my text record"]
   }]
 }
 ```
